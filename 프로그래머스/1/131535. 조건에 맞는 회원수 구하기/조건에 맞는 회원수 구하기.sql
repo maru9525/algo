@@ -1,0 +1,6 @@
+--  2021년에 가입한 회원 중 나이가 20세 이상 29세 이하인 회원 몇 명
+SELECT COUNT(*)
+  FROM USER_INFO
+ WHERE 1 = 1
+   AND TO_CHAR(JOINED, 'YYYY') = '2021'
+   AND AGE BETWEEN 20 AND 29
